@@ -33,6 +33,8 @@ Gem::Specification.new do |spec|
   # Uncomment to register a new dependency of your gem
   spec.add_dependency "rack", "~> 2.2"
   spec.add_dependency "webrick"
+  spec.add_dependency "rack-test"
+  spec.add_dependency "minitest"
 
   # For more information and examples about making a new gem, check out our
   # guide at: https://bundler.io/guides/creating_gem.html
