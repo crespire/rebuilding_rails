@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.email = ["hello@crespire.dev"]
 
   spec.summary = "The Rules Gem from Rebuilding Rails by Noah Gibbs"
-  spec.description = "The Rules Gem from Rebuilding Rails by Noah Gibbs, a Rack-based web framework and learning experience.."
+  spec.description = "The Rules Gem from Rebuilding Rails by Noah Gibbs, a Rack-based web framework and learning experience."
   spec.homepage = "https://github.com/crespire/rebuilding_rails"
   spec.required_ruby_version = ">= 3.0"
 
