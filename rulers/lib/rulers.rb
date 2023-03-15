@@ -1,8 +1,9 @@
 # frozen_string_literal: true
 
-require_relative "rulers/version"
-require_relative "rulers/array"
-require_relative "rulers/routing"
+require "rulers/version"
+require "rulers/routing"
+require "rulers/util"
+require "rulers/dependencies"
 
 module Rulers
   class Error < StandardError; end
