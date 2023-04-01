@@ -12,16 +12,17 @@ class RulersAppTest < Minitest::Test
   end
 
   def test_request
-    get "/"
+    get "/test/index"
 
     assert last_response.ok?
     body = last_response.body
-    assert body["Hello"]
+    assert body["The index route"]
   end
 
-  def test_post
-    post "/"
+  def test_routing
+    get "/test/secret"
 
     assert last_response.ok?
+    assert last_response.body["We found a secret!"]
   end
 end
