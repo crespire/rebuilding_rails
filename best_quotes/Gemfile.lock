@@ -2,6 +2,7 @@ PATH
   remote: ../rulers
   specs:
     rulers (0.0.3)
+      erubis
       minitest
       rack (~> 2.2)
       rack-test
@@ -10,6 +11,7 @@ PATH
 GEM
   remote: https://rubygems.org/
   specs:
+    erubis (2.7.0)
     ffi (1.15.5)
     listen (3.8.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
