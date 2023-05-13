@@ -1,0 +1,7 @@
+<%# Quotes Index %>
+<% quotes.each do |q| %>
+  <blockquote>
+    <%= q["quote"] %><br>
+    &mdash; <%= q["attribution"] %>
+  </blockquote>
+<% end %>

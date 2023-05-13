@@ -1,7 +1,9 @@
 require "erubis"
+require "rulers/file_model"
 
 module Rulers
   class Controller
+    include Rulers::Model
     attr_reader :env
 
     def initialize(env)
@@ -13,7 +15,7 @@ module Rulers
       template = File.read filename
       eruby = Erubis::Eruby.new(template)
       instance_vars = {}
-      self.instance_variables.each { |var| instance_vars[var] = self.instance_variable_get var }
+      instance_variables.each { |var| instance_vars[var] = instance_variable_get var }
       eruby.result locals.merge(instance_vars)
     end
 
